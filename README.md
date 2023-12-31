@@ -49,7 +49,17 @@ These metrics help in determining the performance and suitability of each model 
 4. **Evaluation**: Models are evaluated using the above metrics.
 
 ## Sample Output
-The script will output the performance metrics for each model, helping you to compare and understand the effectiveness of each model in weather prediction.
+The results of the model evaluations are as follows:
+
+| Metric          | Linear Regression | KNN     | Tree    | Logistic Regression | SVM     |
+|-----------------|-------------------|---------|---------|---------------------|---------|
+| MAE             | 0.256315          | NaN     | NaN     | NaN                 | NaN     |
+| MSE             | 0.115720          | NaN     | NaN     | NaN                 | NaN     |
+| R2              | 0.427133          | NaN     | NaN     | NaN                 | NaN     |
+| Accuracy Score  | NaN               | 0.818321| 0.818321| 0.827481            | 0.722137|
+| Jaccard Index   | NaN               | 0.425121| 0.480349| 0.484018            | 0.722137|
+| F1-Score        | NaN               | 0.596610| 0.648968| 0.652308            | 0.605622|
+| Log Loss        | NaN               | NaN     | NaN     | 0.380085            | NaN     |
 
 ## Contribution
 Contributions to this project are welcome. You can improve the models, add new ones, or enhance the data preprocessing steps. Please ensure to follow coding standards and comment your code where necessary.
