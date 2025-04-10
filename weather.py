@@ -15,10 +15,10 @@ from sklearn.metrics import confusion_matrix, accuracy_score
 import sklearn.metrics as metrics
 
 # Download data from a url
-# import requests
-# path='https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillUp/labs/ML-FinalAssignment/Weather_Data.csv'
-# r = requests.get(path, allow_redirects=True)
-# open('Weather_Data.csv', 'wb').write(r.content)
+import requests
+path='https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillUp/labs/ML-FinalAssignment/Weather_Data.csv'
+r = requests.get(path, allow_redirects=True)
+open('Weather_Data.csv', 'wb').write(r.content)
 
 # Reading Weather_Data.csv to a data frame
 df = pd.read_csv("Weather_Data.csv")
